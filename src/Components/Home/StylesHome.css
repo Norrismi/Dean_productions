@@ -32,14 +32,33 @@ img {
     margin-right: auto;
 
 }
-
-.home-body {
+.parent-container{
+    display: flex;
+    flex-direction: row;
     background-color: #F3F5F7;
-    padding: 0 80px 0 80px;
-    width: 800px;
+}
+
+.home-container {
+
 
 }
 
-.first-paragraph {
-    padding-top: 50px;
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    flex: 0 0 60%;
+    padding: 45px 15px 30px 45px;
+
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 40%;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    padding: 45px 15px 30px 15px;
 }

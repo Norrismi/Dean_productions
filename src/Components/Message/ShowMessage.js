@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Nav from '../Nav/Nav'
-import ShowMessage from '../Message/ShowMessage'
-import api from '../ThirdParty/API'
+import Nav from "../Nav/Nav";
+import MessageTemplate from "./MessageTemplate";
+import api from "../ThirdParty/API";
 
-class messageFetch extends Component {
+class ShowMessage extends Component {
   state = {
     results: [],
   };
@@ -23,15 +23,14 @@ class messageFetch extends Component {
   }
 
   render() {
-      //console.log(this.state.results)
-     //const {results} = this.state
+    //console.log(this.state.results)
+    //const {results} = this.state
     return (
       <div className="">
-          <Nav/>
-     
+        {/* <Nav/> */}
 
         {this.state.results.map((result) => (
-          <ShowMessage
+          <MessageTemplate
             key={result.id}
             name={result.name}
             phone={result.phone}
@@ -44,4 +43,4 @@ class messageFetch extends Component {
   }
 }
 
-export default messageFetch;
+export default ShowMessage;
