@@ -5,6 +5,9 @@ import api from '../ThirdParty/API'
 
 //let emailRegex = RegExp(/[^@]+@[^.]+\..+/);
 
+//const api = process.env.REACT_APP_ENDPOINT;
+
+
 class Contact extends Component {
   state = {
     name: "",
@@ -34,7 +37,7 @@ class Contact extends Component {
           this.props.history.push("/ContactComplete");
         }
         )
-        .then(error => {console.log(error)})
+        // .then(error => {console.log(error)})
       : data.formErrors.form.push("Complete the form");
 
     this.setState({
