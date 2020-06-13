@@ -1,19 +1,21 @@
 * {
     box-sizing: border-box;
-    
+
 }
 
-.container{
+.contact-container {
     background-color: #F3F5F7;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.header1{
+.header1 {
     padding: 0 80px 0 80px;
     width: 800px;
 }
 
-.header2{
+.header2 {
     padding: 0 80px 0 80px;
     width: 800px;
 }
@@ -24,6 +26,38 @@
 
 }
 
-.contact-forms{
+.contact-forms {
     padding: 80px 0 0 80px;
 }
+
+
+
+
+input,
+textarea {
+
+    margin-bottom: 10;
+    border: none;
+    border: none;
+    border-bottom: 2px solid #2C343E;
+    background-color: #F3F5F7;
+    width: 200px;
+    height: 25px;
+}
+
+.form-name .form-phone .form-email .form-message .form-name .form-btn {
+    display: flex;
+    
+}
+
+
+textarea {
+    height: 100px;
+    width: 250px
+}
+
+::placeholder{
+    color: #77A69B;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+

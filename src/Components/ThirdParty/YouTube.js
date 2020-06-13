@@ -4,15 +4,15 @@ import ReactPlayer from 'react-player'
 class ResponsivePlayer extends Component {
   render () {
 
-    const {url} = this.props
+    const {url, width, height} = this.props
     return (
       <div className='player-wrapper'>
         <ReactPlayer
           className='react-player'
           url = {url}
           // controls= "true"
-          // width='25%'
-          // height='25%'
+          // width= {width}
+          // height= {height}
         />
       </div>
     )

@@ -22,43 +22,48 @@ F7FFF7 white */
 } */
 
 .top-half {
-    background-color: #B7C1CC;
+  background-color: #b7c1cc;
 }
 
 img {
-    display: block;
-    max-width: 73%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.parent-container{
-    display: flex;
-    flex-direction: row;
-    background-color: #F3F5F7;
+  display: block;
+  max-width: 73%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-container {
-
-
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f3f5f7;
+  justify-content: center;
 }
 
+.home-container {}
 
-
-.left{
-    display: flex;
-    flex-direction: column;
-    font-family: "Segoe UI", Roboto, sans-serif;
-    flex: 0 0 60%;
-    padding: 45px 15px 30px 45px;
-
+.left {
+  display: flex;
+  flex-direction: column;
+  font-family: "Platform Medium", Roboto, sans-serif;
+  flex: 0 0 60%;
+  padding: 45px 15px 30px 45px;
 }
 
-.right{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex: 0 0 40%;
-    font-family: "Segoe UI", Roboto, sans-serif;
-    padding: 45px 15px 30px 15px;
+.right {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 40%;
+
+  padding: 45px 15px 30px 15px;
+}
+
+.video1 {
+  padding-bottom: 10px;
+  height: 300px
+}
+
+.video2 {
+  padding-bottom: 10px;
+  height: 300px
 }

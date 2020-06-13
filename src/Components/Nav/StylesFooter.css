@@ -1,0 +1,13 @@
+
+
+.footer-container{
+
+}
+
+
+.footer{
+    font-family: "Platform Medium", Roboto, sans-serif;
+    background-color: #f3f5f7;
+    display: flex;
+    justify-content: center;
+}

@@ -4,6 +4,7 @@ import "./StylesHome.css";
 import Nav from "../Nav/Nav";
 import YouTube from "../ThirdParty/YouTube";
 import ReactPlayer from "react-player";
+import Footer from '../Nav/Footer'
 
 class Home extends Component {
   constructor(props) {
@@ -75,22 +76,31 @@ class Home extends Component {
 
 
         <div className="right">
+          <div className="video1">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=8iU8LPEa4o0"
+            url="https://www.youtube.com/watch?v=vYh-Eg7AELg"
             controls={true}
             volume = '0.1'
-            height='75%'
-            width='75%'
+            height='100%'
+            width='100%'
+            onSeek={5}
           />
+
+          </div>
+
+          <div className="video2">
+
              <ReactPlayer
-            url="https://www.youtube.com/watch?v=8iU8LPEa4o0"
+            url="https://www.youtube.com/watch?v=8cNt8ZkRbZ4"
             controls={true}
             volume = '0.1'
-            height='75%'
-            width='75%'
+            height='100%'
+            width='100%'
           />
+          </div>
         </div>
         </div>
+        <Footer/>
       </div>
     );
   }

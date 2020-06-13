@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav'
 import './StylesContact.css'
 import api from '../ThirdParty/API'
 
+
 //let emailRegex = RegExp(/[^@]+@[^.]+\..+/);
 
 //const api = process.env.REACT_APP_ENDPOINT;
@@ -76,6 +77,8 @@ class Contact extends Component {
     return (
       <div>
         <Nav />
+        <div className="contact-container">
+
         <h3 className="header1">Contact Us...</h3>
         <h3 className="header2">We want to hear from you!</h3>
         <br></br>
@@ -95,7 +98,7 @@ class Contact extends Component {
                 onChange={this.handleChange}
                 placeholder="Fist and Last Name"
               />
-            </div>
+            </div><br></br>
             <div className="form-phone">
               <input
                 type="tel"
@@ -127,12 +130,14 @@ class Contact extends Component {
                 rows="10"
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className=".form-btn">
               Submit
             </button>
           </form>
           {formErrors.form ? <span>{formErrors.form[0]}</span> : null}
         </div>
+        </div>
+        
       </div>
     );
   }
