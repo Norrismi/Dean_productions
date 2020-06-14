@@ -80,7 +80,7 @@ class Home extends Component {
           <ReactPlayer
             url="https://www.youtube.com/watch?v=vYh-Eg7AELg"
             controls={true}
-            volume = '0.1'
+            volume = {0.1}
             height='100%'
             width='100%'
             onSeek={5}
@@ -93,7 +93,7 @@ class Home extends Component {
              <ReactPlayer
             url="https://www.youtube.com/watch?v=8cNt8ZkRbZ4"
             controls={true}
-            volume = '0.1'
+            volume = {0.1}
             height='100%'
             width='100%'
           />
