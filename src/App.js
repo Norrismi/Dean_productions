@@ -5,6 +5,9 @@ import Home from './Components/Home/Home'
 import Testimonials from './Components/Testimonials/Testimonials'
 import contactComplete from './Components/ContactComplete/ContactComplete'
 import ShowMessage from './Components/Message/ShowMessage'
+import PrivateRoute from './Components/Fire/PrivateRoute'
+import Admin from './Components/Fire/Admin'
+import { AuthProvider } from './Components/Fire/Auth'
 // import Login from './components/fire/Login'
 // import SignUp from './components/fire/SignUp'
 
@@ -13,21 +16,24 @@ import ShowMessage from './Components/Message/ShowMessage'
 
 function App() {
   return (
-    // <AuthProvider>
-    // </AuthProvider>
+    <AuthProvider>
+  
       <Router>
-        <Switch>
+        <div>
+
           {/* <PrivateRoute path="/messageFetch" component={MessageFetch} /> */}
           {/* <Route path="/Login" component={Login} /> */}
           {/* <Route path="/SignUp" component={SignUp} /> */}
           <Route path="/ShowMessage" component={ShowMessage} />
+          <Route path="/admin" component={Admin} />
           <Route path="/contact" component={Contact} />
           <Route path="/contactComplete" component={contactComplete} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/" exact component={Home} />
-          <Route path="*" component={() => "404 path not found"} />
-        </Switch>
+          {/* <Route path="*" component={() => "404 path not found"} /> */}
+        </div>
       </Router>
+    </AuthProvider>
   );
 }
 
