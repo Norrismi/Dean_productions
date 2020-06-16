@@ -1,6 +1,6 @@
 import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
-import app from './Base'
+import app from "./Base";
 import { AuthContext } from "./Auth";
 
 const Login = ({ history }) => {
@@ -8,29 +8,35 @@ const Login = ({ history }) => {
     async (event) => {
       event.preventDefault();
       const { email, password } = event.target.elements;
+      let adminEmail = 'dean26mason@gmail.com'
+
       try {
         await app
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
-        history.push("/fetchMessage");
-      } catch (error) {
+          //if(email != adminEmail) throw(error) 'sorry not an Admin';
+        history.push("/showMessage");
+      }
+
+      catch (error) {
         alert(error);
       }
     },
     [history]
   );
 
-  const { currentUser } = useContext(AuthContext);
-  console.log(currentUser)
 
-  if (currentUser.email !== 'dean26mason@gmail') {
-    return <Redirect to="/" />;
-  } 
 
+  const { currentUser } = useContext(AuthContext); ///
+  console.log(currentUser);
+
+  //   if (currentUser.email !== 'dean26mason@gmail') {
+  //     return <Redirect to="/" />;
+  //   }
 
   return (
     <div>
-      <h1>Login in</h1>
+      <h1>Login</h1>
       <form onSubmit={handleLogin}>
         <label>
           Email
@@ -42,9 +48,11 @@ const Login = ({ history }) => {
         </label>
         <button type="submit">Sign Up</button>
       </form>
+      {/* <div className="logout">
+                    <button onClick={this.logout}>Log Out</button>
+                </div> */}
     </div>
   );
 };
 
 export default withRouter(Login);
-

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import musicPic from "../../Assets/music-stage.jpg";
 import "./StylesHome.css";
 import Nav from "../Nav/Nav";
-import YouTube from "../ThirdParty/YouTube";
 import ReactPlayer from "react-player";
 import Footer from '../Nav/Footer'
 

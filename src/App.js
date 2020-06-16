@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Contact from './Components/Contact/Contact'
 import Home from './Components/Home/Home'
 import Testimonials from './Components/Testimonials/Testimonials'
 import contactComplete from './Components/ContactComplete/ContactComplete'
 import ShowMessage from './Components/Message/ShowMessage'
-import PrivateRoute from './Components/Fire/PrivateRoute'
+//import PrivateRoute from './Components/Fire/PrivateRoute'
 import Admin from './Components/Fire/Admin'
 import { AuthProvider } from './Components/Fire/Auth'
 // import Login from './components/fire/Login'
