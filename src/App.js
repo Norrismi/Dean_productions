@@ -7,7 +7,7 @@ import contactComplete from './Components/ContactComplete/ContactComplete'
 import ShowMessage from './Components/Message/ShowMessage'
 //import PrivateRoute from './Components/Fire/PrivateRoute'
 import Admin from './Components/Fire/Admin'
-import { AuthProvider } from './Components/Fire/Auth'
+//import { AuthProvider } from './Components/Fire/Auth'
 // import Login from './components/fire/Login'
 // import SignUp from './components/fire/SignUp'
 
@@ -16,7 +16,8 @@ import { AuthProvider } from './Components/Fire/Auth'
 
 function App() {
   return (
-    <AuthProvider>
+    // <AuthProvider>
+    // </AuthProvider>
   
       <Router>
         <div>
@@ -33,7 +34,6 @@ function App() {
           {/* <Route path="*" component={() => "404 path not found"} /> */}
         </div>
       </Router>
-    </AuthProvider>
   );
 }
 

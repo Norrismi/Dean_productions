@@ -27,7 +27,7 @@ class ShowMessage extends Component {
     //const {results} = this.state
     return (
       <div className="">
-        <Nav/>
+        {/* <Nav/> */}
 
         {this.state.results.map((result) => (
           <MessageTemplate
