@@ -6,45 +6,61 @@ import Nav from "../Nav/Nav";
 // import app from "./Base";
 import ShowMessage from "../Message/ShowMessage";
 import { auth, provider } from "./Base";
+import api from "../ThirdParty/API";
 
 class Admin extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    email:{}
+      // email: 
+      // uid: 
+
+      user: null,
+      //master: auth.uid,
     };
   }
   login = () => {
-    auth.signInWithPopup(provider).then((result) => {
+    //const data = this.state;
+    //re-drirect on logout
+    auth
+      .signInWithPopup(provider)
+      .then((result) => {
+        this.setState({
+          user: result.user,
+        });
+      })
+      // .then(() => {
+      //   /// async await
+      //   api.post("/master.json", data);
+      // });
+  };
+  logout = () => {
+    auth.signOut().then(() => {
       this.setState({
-        user: result.user,
+        user: null,
       });
     });
   };
-  logout = () => {
-    auth.signOut()
-  };
+
   componentDidMount() {
     auth.onAuthStateChanged((user) => {
-      console.log(user.email)
+      console.log(auth.currentUser.email);
+      //(user? `user: ${user}`: `user: ${null}`)
       if (user) {
-        this.setState( {email: user.email, user} );
+        this.setState({ email: user.email, user });
       }
     });
   }
   render() {
-    const {email} = this.state
-    const admin_dean = 'dean26mason@gmail.com'
+    const { email } = this.state;
+    const admin_dean = "dean26mason@gmail.com";
     let authButton = this.state.user ? (
       <button onClick={this.logout}>Log Out</button>
     ) : (
       <button onClick={this.login}>Log In</button>
     );
-    let admin = email === admin_dean ? (
-      <ShowMessage />
-    ) : (
-      <h4>Log in for Admin tools</h4>
-    );
+    let admin =
+      email === admin_dean ? <ShowMessage /> : <h4>Log in for Admin tools</h4>;
     return (
       <div>
         <Nav />
