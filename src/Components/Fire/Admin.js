@@ -53,19 +53,19 @@ class Admin extends Component {
   }
   render() {
     const { email } = this.state;
-    const admin_dean = "dean26mason@gmail.com";
+    //const admin_dean = "dean26mason@gmail.com";
     let authButton = this.state.user ? (
       <button onClick={this.logout}>Log Out</button>
     ) : (
       <button onClick={this.login}>Log In</button>
     );
-    let admin =
-      email === admin_dean ? <ShowMessage /> : <h4>Log in for Admin tools</h4>;
+    // let admin =
+    //   email === admin_dean ? <ShowMessage /> : <h4>Log in for Admin tools</h4>;
     return (
       <div>
         <Nav />
         {authButton}
-        {admin}
+        {/* {admin} */}
       </div>
     );
   }
