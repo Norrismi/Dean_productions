@@ -4,6 +4,7 @@ import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import contactComplete from "./Components/ContactComplete/ContactComplete";
+import NotFound from './Components/NotFound/NotFound'
 //import Admin from "./Components/Fire/Admin";
 
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/contactComplete" component={contactComplete} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/" exact component={Home} />
-          <Route path="*" component={() => "404 path not found"} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Router>
   

@@ -1,0 +1,56 @@
+
+
+.parent404 {
+
+    background-color: black;
+    
+}
+
+.piano {
+    opacity: 0.2;
+    filter: sepia(60%); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.pianoTextContainer {
+    position: relative;
+}
+
+/* .textBackground{
+    background-color: grey;
+    height: 400px;
+    width:400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.firstComment {
+    color: grey;
+    position: absolute;
+    line-height: 26px;
+    font-size: 32px;
+    font-weight: 200;
+    top: 44%;
+    left: 50%;
+    transform: translate(-51%, -50%);
+
+}
+
+.secondComment {
+    color: grey;
+    position: absolute;
+   
+    line-height: 50px;
+    font-size: 45px;
+    font-weight: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
