@@ -1,8 +1,12 @@
+
+
 .master-container {
     display: flex;
+    flex-direction: row;
     background-color: #2C343E;
     height: 100px;
     font-family: Raleway, Helvetica, sans-serif;
+    width: auto
   
 }
 
@@ -13,7 +17,10 @@
 }
 
 
-nav.nav-bar {
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     padding-right: 40px;
     font-weight: 100;
     font-size: 30px;
@@ -43,6 +50,13 @@ a:link {
     color: #FB9F89;
 
 }
+
+.scrolled{
+    position: fixed;
+  
+    
+}
+
 
 
 
