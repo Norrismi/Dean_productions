@@ -38,11 +38,10 @@ class Contact extends Component {
             </span>
 
             {this.state.fields ? (
-              <div className='successContainer'>
-
-              <p className="submitSuccess">
-                Thank you, your message has been submitted!
-              </p>
+              <div className="successContainer">
+                <p className="submitSuccess">
+                  Thank you, your message has been submitted!
+                </p>
               </div>
             ) : null}
           </div>

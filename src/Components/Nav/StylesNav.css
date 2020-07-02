@@ -1,12 +1,18 @@
 
 
+.scrolled{
+    position: fixed;
+    width: 100%;
+  
+}
+
 .master-container {
     display: flex;
     flex-direction: row;
     background-color: #2C343E;
     height: 100px;
     font-family: Raleway, Helvetica, sans-serif;
-    width: auto
+   
   
 }
 
@@ -18,9 +24,9 @@
 
 
 .nav-bar {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-end; */
     padding-right: 40px;
     font-weight: 100;
     font-size: 30px;
@@ -51,10 +57,15 @@ a:link {
 
 }
 
-.scrolled{
-    position: fixed;
-  
+@media screen and (max-width: 500px) {
+    .master-container {
+
+        background-color: red;
+        height: 100px;
     
+       
+      
+    }
 }
 
 

@@ -14,12 +14,12 @@ class Home extends Component {
   render() {
     return (
       <div className="main-container">
+      <Nav />
         <div className="top-half">
           <img src={musicPic} alt="music stage" />
         </div>
-        <div className="nav-bar">
-          <Nav />
-        </div>
+       
+      
         <div className="parent-container">
           <div className="home-container">
             <div className="left">
