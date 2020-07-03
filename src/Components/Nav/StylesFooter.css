@@ -1,7 +1,9 @@
 
 
 .footer-container{
-
+    display: flex;
+    justify-content: center;
+    background-color: #f3f5f7;
 }
 
 
@@ -10,4 +12,13 @@
     background-color: #f3f5f7;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        width: 250px;
+    }
 }

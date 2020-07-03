@@ -1,34 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./StylesNav.css";
 
-class Nav extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      scrolled: false,
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 5;
-      if (isTop !== true) {
-        this.setState({ scrolled: true });
-      } else {
-        this.setState({ scrolled: false });
-      }
-    });
-  }
-
-  // componentWillUnmount(){
-  //   window.removeEventListener('scroll')
+const Nav = () => {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     scrolled: false,
+  //   };
   // }
 
-  render() {
+  // componentDidMount() {
+  //   window.addEventListener("scroll", () => {
+  //     const isTop = window.scrollY < 5;
+  //     if (isTop !== true) {
+  //       this.setState({ scrolled: true });
+  //     } else {
+  //       this.setState({ scrolled: false });
+  //     }
+  //   });
+  // }
+
+  // // componentWillUnmount(){
+  // //   window.removeEventListener('scroll')
+  // // }
+
+
     return (
-      <nav className="navbar navbar sticky-top navbar-light bg-light navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand">Logo</a>
+      <nav className="navbar sticky-top  navbar-expand-lg navbar-dark bg-dark">
+        <div className="navbar-brand">Logo</div>
         <button
           className="navbar-toggler"
           type="button"
@@ -50,7 +50,7 @@ class Nav extends Component {
               className="nav-item active"
               activeStyle={{
                 fontWeight: "bold",
-                color: "white",
+                color: '#F0EBC5',
               }}
             >
               <li>Home</li>
@@ -60,6 +60,7 @@ class Nav extends Component {
               className="nav-item active"
               activeStyle={{
                 fontWeight: "bold",
+                color: '#F0EBC5',
               }}
             >
               <li>Testimonials</li>
@@ -69,6 +70,7 @@ class Nav extends Component {
               className="nav-item active"
               activeStyle={{
                 fontWeight: "bold",
+                color: '#F0EBC5',
               }}
             >
               <li>Contact</li>
@@ -77,7 +79,7 @@ class Nav extends Component {
         </div>
       </nav>
     );
-  }
-}
+  
+            }
 
 export default Nav;
