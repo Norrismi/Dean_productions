@@ -9,8 +9,8 @@ function testimonials(params) {
   return (
     <div className="testimonials-container">
       <Nav />
-      <div className="testimonials-header">
-        <h2>Kind Words from Our Listeners</h2>
+      <div>
+        <h2 className="testimonials-header">Kind Words from Our Listeners</h2>
         <div className="comments">
           <div id="highlight">
             <em>"Great Vocials!"</em>
