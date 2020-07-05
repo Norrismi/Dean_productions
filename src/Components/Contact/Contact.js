@@ -20,6 +20,8 @@ class Contact extends Component {
     return (
       <div>
         <Nav />
+       
+
         <div className="columns-container">
           <div className="contact-left-side">
             <h3 className="header1">Contact Us...</h3>
@@ -31,7 +33,7 @@ class Contact extends Component {
               and the genre of music you need. We will bend our strings as much
               as possible to meet your needs!
             </div>
-            <span>
+            <span className='contactForm'>
               {!this.state.fields ? (
                 <Form onSubmit={(fields) => this.onSubmit(fields)} />
               ) : null}
@@ -44,6 +46,15 @@ class Contact extends Component {
                 </p>
               </div>
             ) : null}
+
+              <div className="cellPic">
+              <img
+              src={shSax}
+              className="shSax"
+              alt="Dean St.Hillaire playing Saxophone"
+            />
+              </div>
+
           </div>
 
           <div className="contact-right-side">
@@ -57,6 +68,7 @@ class Contact extends Component {
 
         <Footer />
       </div>
+       
     );
   }
 }

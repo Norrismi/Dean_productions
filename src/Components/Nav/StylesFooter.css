@@ -1,24 +1,39 @@
 
 
-.footer-container{
+.social-media-parent {
+    background-color: #f3f5f7;
     display: flex;
     justify-content: center;
-    background-color: #f3f5f7;
+    padding-bottom: 5px;
 }
 
-
-.footer{
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f5f7;
     font-family: "Platform Medium", Roboto, sans-serif;
-    background-color: #f3f5f7;
+    font-size: small;
+    padding-bottom: 20px;
+  
+}
+
+.footer-legal-one {
     display: flex;
     justify-content: center;
+    
+}
+.footer-legal-two {
+    display: flex;
+    justify-content: center;
+  
+ 
 }
 
-@media screen and (max-width: 500px) {
-
-    .footer{
-        display: flex;
-        justify-content: center;
-        width: 250px;
-    }
+.facebook-icon {
+  padding: 3px;
 }
+
+.youTube-icon {
+  padding: 3px;
+}
+

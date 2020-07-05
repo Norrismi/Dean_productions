@@ -5,10 +5,11 @@
    
 }
 
-
-.testimonials-header{
+.headerContainer{
     display: flex;
     justify-content: center;
+}
+.testimonials-header{
     font-family: 'Pacifico', sans-serif;
     padding: 10px 20px 10px 20px;
     font-weight: 100;
