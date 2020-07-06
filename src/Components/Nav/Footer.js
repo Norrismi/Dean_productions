@@ -16,6 +16,9 @@ const Footer = () => {
           <div className="youTube-icon">
             <SocialIcon url="https://www.youtube.com/user/dean26mason" target="_blank" />
           </div>
+          <div className="youTube-icon">
+            <SocialIcon url="https://www.instagram.com/st._hillaire" target="_blank" />
+          </div>
         </div>
 
       <div className="footer-container">

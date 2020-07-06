@@ -4,8 +4,7 @@
     background-color: #f3f5f7;
     display: flex;
     justify-content: center;
-    padding-bottom: 5px;
-}
+    padding: 20px 0px 0px 0px}
 
 .footer-container {
     display: flex;

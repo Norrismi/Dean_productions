@@ -1,11 +1,23 @@
+.app{
+    display: flex;
+   
+}
+
 
 li {
     color: #F0EBC5;
 }
 
+.nav-container{
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+
 a:link {
-  padding-left: 20px;
-  font-size: large;
+  padding-left: 0px;
+  font-size: 25px;
 }
 
 a:hover{
