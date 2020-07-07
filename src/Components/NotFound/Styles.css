@@ -13,7 +13,6 @@
     height: auto;
     opacity: 0.4;
     filter: sepia(60%);
-    /* padding: 0px 0px 75px 0px */
 }
 
 
@@ -43,7 +42,7 @@
 }
 
 
-/* less 965 */
+
 
 @media screen and (max-width: 965px) {
     .firstComment {
@@ -86,7 +85,7 @@
 }
 
 
-/* less 710 */
+
 
 
 

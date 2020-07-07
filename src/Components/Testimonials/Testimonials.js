@@ -12,7 +12,7 @@ function testimonials(params) {
       <div>
         <div className="headerContainer">
 
-        <h2 className="testimonials-header">Kind Words from Our Listeners</h2>
+        <h2 className="testimonials-header">Kind Words from Our Fellow Partyers</h2>
         </div>
         <div className="comments">
           <div id="highlight">
