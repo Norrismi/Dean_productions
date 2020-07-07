@@ -1,14 +1,6 @@
 .parent404 {
     background-color: #f3f5f7;
-
-}
-
-.piano {
-    opacity: 0.4;
-    filter: sepia(60%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px 0px 75px 0px
+    z-index: 0;
 }
 
 
@@ -16,22 +8,22 @@
     position: relative;
 }
 
-/* .textBackground{
-    background-color: grey;
-    height: 400px;
-    width:400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+.piano {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.4;
+    filter: sepia(60%);
+    /* padding: 0px 0px 75px 0px */
+}
+
 
 .firstComment {
-    color: grey;
+    color: black;
     position: absolute;
     line-height: 26px;
     font-size: 32px;
     font-weight: 200;
+    text-shadow: 1px 1px 5px black, 0 0 25px white, 0 0 5px white;
     top: 44%;
     left: 50%;
     transform: translate(-51%, -50%);
@@ -39,15 +31,62 @@
 }
 
 .secondComment {
-    color: grey;
+    color: black;
     position: absolute;
-
     line-height: 50px;
     font-size: 45px;
     font-weight: 200;
+    text-shadow: 1px 1px 9px black, 0 0 25px white, 0 0 5px white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
 }
+
+
+/* less 965 */
+
+@media screen and (max-width: 965px) {
+    .firstComment {
+        font-size: 25px;
+    }
+    
+    .secondComment {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .firstComment {
+        font-size: 20px;
+    }
+    
+    .secondComment {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .firstComment {
+        font-size: 15px;
+    }
+    
+    .secondComment {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .firstComment {
+        font-size: 12px;
+    }
+    
+    .secondComment {
+        font-size: 15px;
+    }
+}
+
+
+/* less 710 */
+
+
+

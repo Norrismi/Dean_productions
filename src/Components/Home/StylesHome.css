@@ -27,7 +27,9 @@ F7FFF7 white */
 
 img {
   display: block;
-  max-width: 73%;
+  /* max-width: 73%; */
+  max-width: 76%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }

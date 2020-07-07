@@ -9,10 +9,11 @@ const NotFound = () => {
     <div className="parent404">
       <Nav />
       <div className="pianoTextContainer">
-        <img className="piano" src={brokenPiano} alt="music stage" />
-
-        <div className="firstComment">We have a problem</div>
-        <div className="secondComment">404 Error, Page Not Found</div>
+          <img className="piano" src={brokenPiano} alt="music stage" />
+        {/* <div className="bannerText"> */}
+          <h3 className="firstComment">We have a problem</h3>
+          <h2 className="secondComment">404 Error, Page Not Found</h2>
+        {/* </div> */}
       </div>
       <Footer />
     </div>
