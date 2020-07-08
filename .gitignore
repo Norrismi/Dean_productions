@@ -2,6 +2,7 @@
 
 .env
  node_modules/
+ .firebaserc
 
 # dependencies
 /node_modules
