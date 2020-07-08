@@ -16,7 +16,7 @@ const MainNav = () => {
 
           </Nav>
           <Nav>
-            <div className="nav-container">
+         
 
             <Link exact to="/">
               <Nav.Link href="#home">
@@ -33,7 +33,7 @@ const MainNav = () => {
                 <li>Contact</li>
               </Nav.Link>
             </Link>
-            </div>
+       
           </Nav>
         </Navbar.Collapse>
       </Navbar>

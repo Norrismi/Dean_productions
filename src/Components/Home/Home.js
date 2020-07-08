@@ -14,10 +14,10 @@ class Home extends Component {
   render() {
     return (
       <div className="main-container">
+      <Nav />
         <div className="top-half">
           <img src={musicPic} alt="music stage" />
         </div>
-      <Nav />
        
       
         <div className="parent-container">
