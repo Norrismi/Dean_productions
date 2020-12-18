@@ -25,8 +25,13 @@ app.use(bodyParser.json());
 //static folder
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req, res) => {
+// app.get('/', (req, res) => {
+//     res.render('contact', { layout: false })
+// })
+
+app.get('/server_form', (req, res) => {
     res.render('contact', { layout: false })
+    // res.json(output)
 })
 
 app.post('/send', (req, res) => {
@@ -50,9 +55,10 @@ app.post('/send', (req, res) => {
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
-            host: "smtp.ethereal.email",
-            port: 587,
-            secure: false, // true for 465, false for other ports
+            // host: "gmail",
+            // port: 587,
+            // secure: false, // true for 465, false for other ports
+            service: 'gmail',
             auth: {
                 user: email_from,
                 pass: sender_pass
@@ -78,7 +84,11 @@ app.post('/send', (req, res) => {
         res.render('contact', { layout: false, msg: 'Message has been sent!' })
     }
 
+   
+
     main().catch(console.error);
 })
 
-app.listen(3000, () => console.log('Server started...'))
+const PORT = 5000;
+
+app.listen(PORT, () => console.log(`Server started on ${PORT}`))
