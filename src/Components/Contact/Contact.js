@@ -36,7 +36,9 @@ class Contact extends Component {
             </div>
             <span className='contactForm'>
               {!this.state.fields ? (
-                  <ServerForm onSubmit={(fields) => this.onSubmit(fields)} />
+                  <ServerForm 
+                  // onSubmit={(fields) => this.onSubmit(fields)} 
+                  />
                 // <Form onSubmit={(fields) => this.onSubmit(fields)} />
               ) : null}
             </span>
