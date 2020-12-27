@@ -4,7 +4,6 @@ import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import NotFound from './Components/NotFound/NotFound'
-//import Admin from "./Components/Fire/Admin";
 
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
   
       <Router>
         <Switch>
-          {/* <Route path="/admin" component={Admin} /> */}
           <Route path="/contact" component={Contact} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/" exact component={Home} />

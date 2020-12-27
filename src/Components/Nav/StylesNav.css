@@ -14,11 +14,11 @@ a:link {
   font-size: 25px;
 }
 
-a:hover{
+/* a:hover{
     text-decoration: none !important;
-}
+} */
 
-li:hover {
+a.nav-link:hover {
     color: #FB9F89;
 
 }
