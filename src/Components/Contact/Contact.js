@@ -34,6 +34,7 @@ class Contact extends Component {
               and the genre of music you need. We will bend our strings as much
               as possible to meet your needs!
             </div>
+          
             <span className='contactForm'>
               {!this.state.fields ? (
                   <ServerForm 
