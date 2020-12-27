@@ -4,38 +4,13 @@ import axios from 'axios'
 let emailRegex = RegExp(/[^@]+@[^.]+\..+/);
 
 class ServerForm extends Component {
-
-    constructor(props) {
-        super();
-        this.state = {
-            name: "",
-            phone: "",
-            email: "",
-            message: "",
-            formErrors: []
-        }
+    state = {
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        formErrors: []
     }
-
-
-
-
-
-
-
-    // this.props.onSubmit(this.state);
-
-    // const data = this.state;
-
-    // data.phone && data.message
-    //   ? api.post("/submission.json", data)   ///////////
-    //   : 
-    //   this.setState({
-    //       name: "",
-    //       phone: "",
-    //       email: "",
-    //       message: "",
-    //       success: [],
-    //     });
 
 
     handleChange = (event) => {
@@ -59,17 +34,27 @@ class ServerForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        this.props.onSubmit(this.state);
 
         const { name, phone, email, message } = this.state
 
-        const dataToSubmit = {
-            name,
-            phone,
-            email,
-            message
-        }
+        if (email) {
+            const dataToSubmit = {
+                name,
+                phone,
+                email,
+                message
+            }
 
-        axios.post('api/sendMail', dataToSubmit)
+            axios.post('api/sendMail', dataToSubmit)
+            this.setState({
+                name: "",
+                phone: "",
+                email: "",
+                message: "",
+                formErrors: []
+            });
+        }
     };
 
     render() {
@@ -78,7 +63,7 @@ class ServerForm extends Component {
         return (
 
             <div className="contact-form_container">
-                  <h4 className="contact-form_title">How Can We Help? </h4>
+                <h4 className="contact-form_title">How Can We Help? </h4>
                 <form className="contact-form" onSubmit={this.handleSubmit}>
                     <div className="form-name">
                         <input
@@ -123,10 +108,7 @@ class ServerForm extends Component {
                             required
                         ></textarea>
                     </div>
-                    
-
-                        <button className="contact-form_button" type="submit">Submit</button>
-                  
+                    <button className="contact-form_button" type="submit">Submit</button>
                 </form>
             </div>
 

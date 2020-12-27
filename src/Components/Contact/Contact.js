@@ -3,7 +3,6 @@ import Nav from "../Nav/Nav";
 import "./StylesContact.css";
 import Footer from "../Nav/Footer";
 import shSax from "../../Assets/shSax.jpg";
-import Form from "../Form/Form";
 import ServerForm from "../Form/ServerForm";
 
 class Contact extends Component {
@@ -21,8 +20,6 @@ class Contact extends Component {
     return (
       <div>
         <Nav />
-       
-
         <div className="columns-container">
           <div className="contact-left-side">
             <h3 className="header1">Contact Us...</h3>
@@ -34,13 +31,10 @@ class Contact extends Component {
               and the genre of music you need. We will bend our strings as much
               as possible to meet your needs!
             </div>
-          
+
             <span className='contactForm'>
               {!this.state.fields ? (
-                  <ServerForm 
-                  // onSubmit={(fields) => this.onSubmit(fields)} 
-                  />
-                // <Form onSubmit={(fields) => this.onSubmit(fields)} />
+                <ServerForm onSubmit={(fields) => this.onSubmit(fields)} />
               ) : null}
             </span>
 
@@ -52,13 +46,13 @@ class Contact extends Component {
               </div>
             ) : null}
 
-              <div className="cellPic">
+            <div className="cellPic">
               <img
-              src={shSax}
-              className="shSax"
-              alt="Dean St.Hillaire playing Saxophone"
-            />
-              </div>
+                src={shSax}
+                className="shSax"
+                alt="Dean St.Hillaire playing Saxophone"
+              />
+            </div>
 
           </div>
 
@@ -73,7 +67,7 @@ class Contact extends Component {
 
         <Footer />
       </div>
-       
+
     );
   }
 }

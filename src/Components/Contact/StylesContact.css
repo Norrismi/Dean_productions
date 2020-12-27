@@ -70,6 +70,10 @@ input:focus {
   width: 300px;
 }
 
+span{
+  color: red;
+}
+
 textarea:focus {
   width: 500px;
 }
