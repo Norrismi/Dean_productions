@@ -21,11 +21,11 @@ class Contact extends Component {
       <div>
         <Nav />
         <div className="columns-container">
-          <div className="contact-left-side">
+          <div className="contact_left-side">
             <h3 className="header1">Contact Us...</h3>
             <h3 className="header2">We want to hear from you!</h3>
             <br></br>
-            <div className="body">
+            <div className="contact_body">
               Would you need music for a special event or wedding? This is the
               right page for you! Please leave a message describing the event
               and the genre of music you need. We will bend our strings as much
@@ -49,14 +49,14 @@ class Contact extends Component {
             <div className="cellPic">
               <img
                 src={shSax}
-                className="shSax"
+                className="contact_dean-sax-img"
                 alt="Dean St.Hillaire playing Saxophone"
               />
             </div>
 
           </div>
 
-          <div className="contact-right-side">
+          <div className="contact_right-side">
             <img
               src={shSax}
               className="shSax"

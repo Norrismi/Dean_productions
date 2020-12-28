@@ -5,7 +5,7 @@
   padding-bottom: 30px;
 }
 
-.contact-left-side {
+.contact_left-side {
   background-color: #f3f5f7;
   display: flex;
   flex-direction: column;
@@ -13,13 +13,13 @@
   padding: 40px 7px 30px 30px;
 }
 
-.contact-right-side {
+.contact_right-side {
   background-color: #f3f5f7;
   flex: 0 0 40%;
   padding: 58px 15px 30px 7px;
 }
 
-.body {
+.contact_body {
   display: flex;
   padding: 0 80px 80px 0px;
 }
@@ -38,7 +38,6 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 40px 40px; */
   border: 1px solid grey;
   border-radius: 5px;
   width: 600px;
@@ -139,11 +138,11 @@ textarea {
   display: none;
 }
 
-.shSax {
+.contact_dean-sax-img {
   border-radius: 25px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .contact-left-side {
     padding: 40px 0px 30px 0px;
   }
@@ -160,7 +159,7 @@ textarea {
     padding-left: 25px;
   }
 
-  .body {
+  .contact_body {
     display: flex;
     padding: 0 20px 0 25px;
   }
@@ -181,4 +180,106 @@ textarea {
     display: inline;
     padding-top: 50px;
   }
+} */
+
+
+
+@media  (min-width: 320px) {
+
+.contact_body{
+  width: 360px;
+  padding: 0 30px 30px 0;
 }
+
+
+.contact-form_container{
+  width: 325px;
+  margin: 0;
+}
+
+input,
+textarea {
+  width: 210px;
+}
+
+input:focus,
+textarea:focus {
+  width: 210px;
+}
+
+.contact_dean-sax-img{
+  max-width: 83%;
+  margin: 0 0 0 13px;
+}
+
+.contact_right-side{
+  display: none;
+}
+
+
+.cellPic {
+  display: inline;
+  padding-top: 50px;
+}
+
+}
+
+
+
+
+
+@media  (min-width: 400px) {
+  .contact_left-side {
+    padding: 40px 7px 30px 40px;
+  }
+
+  .contact_dean-sax-img{
+    max-width: 83%;
+    margin: 0 0 0 8px;
+  }
+    
+  }
+
+
+
+
+
+
+
+@media  (min-width: 768px) {
+
+  .contact_body{
+    width: 395px;
+    padding: 0 30px 30px 0;
+  }
+  
+  
+  .contact-form_container{
+    width: 325px;
+    margin: 0;
+  }
+  
+  input,
+  textarea {
+    width: 200px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    width: 200px;
+  }
+  .contact_right-side{
+
+  }
+
+  .contact_left-side{
+    
+  }
+  
+  img.shSax{
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  
+  }
