@@ -20,7 +20,7 @@ class Contact extends Component {
     return (
       <div>
         <Nav />
-        <div className="columns-container">
+        <div className="contact_columns-container">
           <div className="contact_left-side">
             <h3 className="header1">Contact Us...</h3>
             <h3 className="header2">We want to hear from you!</h3>
@@ -46,7 +46,7 @@ class Contact extends Component {
               </div>
             ) : null}
 
-            <div className="cellPic">
+            <div className="contact_mobile-picture">
               <img
                 src={shSax}
                 className="contact_dean-sax-img"
@@ -59,7 +59,7 @@ class Contact extends Component {
           <div className="contact_right-side">
             <img
               src={shSax}
-              className="shSax"
+              className="contact_right-side-shSax"
               alt="Dean St.Hillaire playing Saxophone"
             />
           </div>

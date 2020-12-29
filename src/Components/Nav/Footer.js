@@ -8,7 +8,7 @@ const Footer = () => {
   let currentYear = today.getFullYear();
 
   return (
-    <div>
+    <div className='footer_container'>
         <div className="social-media-parent">
           <div className="facebook-icon">
             <SocialIcon url="https://www.facebook.com/dean.sthillaire" target="_blank" />

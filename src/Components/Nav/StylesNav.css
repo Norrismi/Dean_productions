@@ -1,12 +1,12 @@
-.app{
+/* .app{
     display: flex;
    
-}
+} */
 
 
-li {
+/* li {
     color: #F0EBC5;
-}
+} */
 
 
 a:link {
@@ -14,13 +14,16 @@ a:link {
   font-size: 25px;
 }
 
-/* a:hover{
-    text-decoration: none !important;
-} */
 
-a.nav-link:hover {
+
+/* a.nav-link:hover {
     color: #FB9F89;
 
+} */
+
+.navbar-brand{
+    max-width: 3%;
+    margin-left: 30px;
 }
 
 

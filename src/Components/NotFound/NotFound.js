@@ -6,13 +6,13 @@ import Footer from "../Nav/Footer";
 
 const NotFound = () => {
   return (
-    <div className="parent404">
+    <div className="NotFound_parent404">
       <Nav />
-      <div className="pianoTextContainer">
-          <img className="piano" src={brokenPiano} alt="music stage" />
+      <div className="NotFound_pianoTextContainer">
+          <img className="NotFound_piano" src={brokenPiano} alt="music stage" />
      
-          <h3 className="firstComment">We have a problem</h3>
-          <h2 className="secondComment">404 Error, Page Not Found</h2>
+          <h3 className="NotFound_firstComment">We have a problem</h3>
+          <h2 className="NotFound_secondComment">404 Error, Page Not Found</h2>
   
       </div>
       <Footer />
