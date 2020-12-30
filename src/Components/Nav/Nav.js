@@ -18,7 +18,7 @@ const MainNav = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
         <a className="navbar-brand" href="/">
-          <img className=" hidden-xs hidden-sm hidden-md" src={sax_logo} alt='site logo and alternative home button'/>
+          <img className=" nav-bar_logo" src={sax_logo} alt='site logo and alternative home button'/>
         
         </a>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">

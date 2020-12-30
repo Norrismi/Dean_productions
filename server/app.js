@@ -30,11 +30,6 @@ app.post('/api/sendMail', (req, res) => {
     <p> ${req.body.message} </p> `;
 
     async function main() {
-        // Generate test SMTP service account from ethereal.email
-        // Only needed if you don't have a real mail account for testing
-        // let testAccount = await nodemailer.createTestAccount();
-
-        // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
@@ -43,17 +38,16 @@ app.post('/api/sendMail', (req, res) => {
             },
         });
 
-        // send mail with defined transport object
-        let info = await transporter.sendMail({
+        await transporter.sendMail({
             from: email_from,
             to: email_to,
-            subject: 'New Submission from Dean Productions!',
+            subject: 'New Submission from St. Hillaire Productions!',
             text: 'new submission',
             html: output,
         });
 
-        console.log("Message sent: %s", info.messageId);
-        
+
+
     }
 
     main().catch(console.error);
