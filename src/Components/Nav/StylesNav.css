@@ -8,6 +8,10 @@
     color: #F0EBC5;
 } */
 
+/* .nav-bar_logo_name{
+    max-width: 200%;
+    margin: 3px;
+} */
 
 a:link {
     padding-left: 0px;
@@ -17,16 +21,10 @@ a:link {
 
 
 a.navbar-brand {
-    display: flex;
-    flex-direction: row;
     max-width: 3%;
     margin-left: 30px;
 }
 
-.nav-bar_logo_name{
-    max-width: 200%;
-    margin: 3px;
-}
 
 .nav-bar_big-logo{
     max-width: 400%;
@@ -35,14 +33,14 @@ a.navbar-brand {
 
 @media (min-width: 50px) {
  
-    .nav-bar_logo{
+    .nav-bar_big-logo{
         display: none;
     }
 
 }
 
 @media (min-width: 992px) {
-    .nav-bar_logo{
+    .nav-bar_big-logo{
         display: inline;
     }
 

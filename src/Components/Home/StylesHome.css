@@ -1,7 +1,29 @@
-
-.top-half {
-  background-color: #b7c1cc;
+.home_main-container{
+  background-color: #f3f5f7;
 }
+
+.home_page-title{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 10px;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  color: navy;
+  /* font-weight: 100; */
+}
+
+.home_location-contact{
+  text-align: center;
+}
+
+
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f3f5f7;
+  justify-content: center;
+}
+
+
 
 img {
   display: block;
@@ -11,12 +33,6 @@ img {
   margin-right: auto;
 }
 
-.parent-container {
-  display: flex;
-  flex-direction: row;
-  background-color: #f3f5f7;
-  justify-content: center;
-}
 
 
 

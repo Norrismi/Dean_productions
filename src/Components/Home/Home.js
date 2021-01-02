@@ -5,19 +5,29 @@ import Nav from "../Nav/Nav";
 // import ReactPlayer from "react-player";
 import YouTubeVideos from '../ThirdParty/YouTubeVideos'
 import Footer from "../Nav/Footer";
+import { useHistory } from 'react-router-dom';
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+
 
   render() {
+
+    // const {push} = this.props.history.push()
+
     return (
-      <div className="main-container">
+      <div className="home_main-container">
         <Nav />
         <div className="top-half">
-          <img src={musicPic} alt="music stage" />
+          {/* <img src={musicPic} alt="music stage" /> */}
+          <h2 className='home_page-title'>St. Hillaire Production</h2>
+
+          <div className='home_location-contact'>
+            <h5 className='home_location-contact-title'>Music for any Occasion</h5>
+            <span className='home_location text-muted'>Hilton Head, SC | Bluffton, SC | Savannah, GA | Charleston, SC</span>
+            <div className='home_contact-phone text-muted'>843-295-8731 Text or Call</div>
+            <div className='home_contact-phone text-muted'> <button onClick={() => { this.props.history.push('/contact') }}> Contact Now </button> </div>
+          </div>
+
         </div>
 
 
