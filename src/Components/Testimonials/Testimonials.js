@@ -16,7 +16,7 @@ function testimonials(params) {
         </div>
         <div className="comments">
           <div id="highlight">
-            <em>"Great Vocials!"</em>
+            <em>"Renowned Musician"</em>
           </div>
           <div id="comment">
             "In eget velit vel felis interdum euismod vitae quis justo. Nam
@@ -34,7 +34,7 @@ function testimonials(params) {
 
 
           <div id="highlight">
-            <em>"Man of great talent"</em>
+            <em>"Great Jazz and Raggae Music"</em>
           </div>
           <div id="comment">
             "Nunc eros tortor, elementum at commodo ac, vulputate vehicula mi.
@@ -51,7 +51,7 @@ function testimonials(params) {
 
 
           <div id="highlight">
-            <em>"Made for a great night of music"</em>
+            <em>"Super talented"</em>
           </div>
           <div id="comment">
             "Proin metus mauris, malesuada nec purus dignissim, porttitor
@@ -74,7 +74,7 @@ function testimonials(params) {
 
           <div id="highlight">
             <em>
-              "Would love to be back ocean side listening to Dean's music"
+              "Like an Extension of my Vacation"
             </em>
           </div>
           <div id="comment">

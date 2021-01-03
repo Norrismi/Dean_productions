@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-import musicPic from "../../Assets/music-stage.jpg";
+// import musicPic from "../../Assets/music-stage.jpg";
+// import ReactPlayer from "react-player";
 import "./StylesHome.css";
 import Nav from "../Nav/Nav";
-// import ReactPlayer from "react-player";
 import YouTubeVideos from '../ThirdParty/YouTubeVideos'
 import Footer from "../Nav/Footer";
-import { useHistory } from 'react-router-dom';
+import FooterContact from '../Nav/FooterContact'
+
 
 class Home extends Component {
 
 
   render() {
-
-    // const {push} = this.props.history.push()
 
     return (
       <div className="home_main-container">
@@ -23,9 +22,8 @@ class Home extends Component {
 
           <div className='home_location-contact'>
             <h5 className='home_location-contact-title'>Music for any Occasion</h5>
-            <span className='home_location text-muted'>Hilton Head, SC | Bluffton, SC | Savannah, GA | Charleston, SC</span>
-            <div className='home_contact-phone text-muted'>843-295-8731 Text or Call</div>
-            <div className='home_contact-phone text-muted'> <button onClick={() => { this.props.history.push('/contact') }}> Contact Now </button> </div>
+            <FooterContact />
+            <button className='home_contact-btn btn btn-link' onClick={() => { this.props.history.push('/contact') }}> Contact Now </button>
           </div>
 
         </div>
@@ -104,67 +102,8 @@ class Home extends Component {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum
               </div>
-              <br></br>
-              <div>
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </div>   <div>
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
-              </div>
-              <br></br>
-              <div>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </div>
-              <br></br>
-              <div>
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </div>   <div>
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
-              </div>
-              <br></br>
-              <div>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </div>
-              <br></br>
-              <div>
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </div>
+
+    
             </div>
           </div>
 
