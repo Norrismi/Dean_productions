@@ -16,7 +16,9 @@ Music website built for small business owner to generate more attention and gain
 
 ![home page screenshot](src/Assets/SH_Home.jpg)
 
-/Users/norris/Documents/portfolio_2020/dean_productions/src/Assets/SH_Home.jpg
+![contact page screenshot](src/Assets/SH_contact.jpg)
+
+
 
 ## Reflection
 
