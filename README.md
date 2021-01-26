@@ -14,23 +14,26 @@ Music website built for small business owner to generate more attention and gain
 
 ## Project Screen Shots
 
-![alt text](SH_Home.jpg)
+![home page screenshot](src/Assets/SH_Home.jpg)
+
+/Users/norris/Documents/portfolio_2020/dean_productions/src/Assets/SH_Home.jpg
 
 ## Reflection
 
-A friend in the music business has aspirations to build a bigger business and bring in more musicians for help during the summer. I build this website to help him gain a web presents and also to help communication between his clients.<br />
+A local contact in the music business has aspirations to build a bigger business and bring in more musicians for help during the summer. I built this website to help him gain a web presence and also to help communication with his clients.<br />
 
-Originally, this website submission form data was being saved to firebase realtime database. The owner push back at this idea of always having to go into his google firebase account to retreive his website submission. This pushed me to spend time researching solutions on how he could receive website submissions in an easier way. <br />
+Originally, the submission form data was being saved to firebase realtime database. The owner pushed back at the idea of always having to go into his google firebase account to retrieve his submission data. This pushed me to spend time researching solutions on how he could receive website submissions in an easier way. <br />
 
-I found a solution with Node Mailer. Website submission can be sent to the owner through one of his desired emails. A few hurdles I had to overcome was learning how to use Gmail with Nodemailer and also hosting a fullstack website with Heroku. <br /><br />
-
-
-## Installation and Setup Instructions
+I found a solution with Nodemailer. Website submission can be sent to the owner through one of his desired emails. A few hurdles I had to overcome was learning how to use Gmail with Nodemailer and also hosting a fullstack website with Heroku. <br /><br />
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+
 
 ## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 In the project directory, you can run:
 
