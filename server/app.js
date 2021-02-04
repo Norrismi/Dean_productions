@@ -53,6 +53,10 @@ app.post('/api/sendMail', (req, res) => {
     main().catch(console.error);
 })
 
+// app.get('*', (req,res) => {
+//     res.sendFile(path.join(__dirname, 'client/build'))
+// })
+
 const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Server started on ${PORT}`))

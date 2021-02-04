@@ -9,7 +9,7 @@ Music website built for small business owner to generate more attention and gain
 - Express
 - Node Mailer
 - Bootstrap
-- CSS
+- CSS (responsive design)
 
 
 ## Project Screen Shots
