@@ -15,6 +15,17 @@ const YouTubeVideos = () => {
                     width="100%"
                 />
             </div>
+
+
+            <div className="video2">
+                <ReactPlayer
+                    url="https://www.youtube.com/watch?v=3TErfvXlLOM"
+                    controls={true}
+                    volume={0.1}
+                    height="100%"
+                    width="100%"
+                />
+            </div>
         </div>
     );
 }

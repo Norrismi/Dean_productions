@@ -28,9 +28,6 @@ const Footer = () => {
 
       </div>
 
-
-
-
     </div>
   );
 };

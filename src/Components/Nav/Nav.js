@@ -1,7 +1,5 @@
 import React from "react";
 import "./StylesNav.css";
-import sax_logo from '../../Assets/sax_logo.png'
-import logo_name from '../../Assets/logo_name.png'
 import big_logo from '../../Assets/big_logo.jpg'
 
 
@@ -10,23 +8,19 @@ const MainNav = () => {
   return (
     <div className="navbar  navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-      <button className="navbar-toggler" type="button" data-toggle="collapse" 
-      data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
-      aria-expanded="false" aria-label="Toggle navigation"
-      
+      <button className="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation"
       >
-
-
         <span className="navbar-toggler-icon"></span>
       </button>
-        <a className="navbar-brand" href="/">
-          {/* <img className=" nav-bar_logo" src={sax_logo} alt='site logo and alternative home button'/>
-          <img className=" nav-bar_logo_name" src={logo_name} alt='site logo and alternative home button'/> */}
-          <img className=" nav-bar_big-logo" src={big_logo} alt='site logo and alternative home button'/>
-        
-        </a>
+      <a className="navbar-brand" href="/">
+
+        <img className=" nav-bar_big-logo" src={big_logo} alt='site logo and alternative home button' />
+
+      </a>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-        
+
         <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
           <li className="nav-item active">
             <a className="nav-link" href="/">Home </a>
