@@ -5,7 +5,6 @@ const YouTubeVideos = () => {
     return (
         <div>
             
-
             <div className="video2">
                 <ReactPlayer
                     url="https://www.youtube.com/watch?v=-phCXSkRFMU"
@@ -15,7 +14,6 @@ const YouTubeVideos = () => {
                     width="100%"
                 />
             </div>
-
 
             <div className="video2">
                 <ReactPlayer
